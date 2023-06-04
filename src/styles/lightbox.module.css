@@ -1,0 +1,58 @@
+.lightbox_container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.852);
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disp_none {
+    display: none;
+}
+
+.close_icon{
+    cursor: pointer;
+    margin-left: 95%;
+    margin-bottom: 10px;
+}
+
+.main_img_container {
+    position: relative;
+}
+
+.disp_img {
+    width: 400px;
+    border-radius: 15px;
+}
+
+.prev_btn, .next_btn {
+    position: absolute;
+    top: 42%;
+    background: white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.next_btn {
+    right: -25px;
+}
+
+.next_btn:hover {
+    color: hsl(26, 100%, 55%);
+}
+
+.prev_btn {
+    left: -25px;
+}
+
+.prev_btn:hover {
+    color: hsl(26, 100%, 55%);
+}

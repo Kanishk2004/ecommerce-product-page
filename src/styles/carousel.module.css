@@ -1,0 +1,34 @@
+.carousel {
+	width: 100%;
+	height: 45vh;
+	position: relative;
+	display: none;
+}
+
+.carousel button {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 19vh;
+	border-radius: 100%;
+	border: none;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.next_btn {
+	right: 0;
+}
+
+.carousel img {
+	width: 100vw;
+	height: 45vh;
+}
+
+@media (max-width: 1200px) {
+	.carousel {
+		display: block;
+	}
+}
