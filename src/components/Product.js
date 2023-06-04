@@ -53,16 +53,16 @@ const Product = (props) => {
 				</div>
 				<div className={styles.actionables}>
 					<div className={styles.quantity_toggle}>
-						<button>
+						<button onClick={props.decQunatity} disabled={props.quantity==0}>
 							<img src="./images/icon-minus.svg" alt="minus icon" />
 						</button>
-						<h3>0</h3>
-						<button>
+						<h3>{props.quantity}</h3>
+						<button onClick={props.incQunatity} disabled={props.quantity>=10}>
 							<img src="./images/icon-plus.svg" alt="plus icon" />
 						</button>
 					</div>
 					<div className={styles.add_to_cart_btn}>
-						<button>
+						<button disabled={props.quantity==0} onClick={props.addToCart}>
 							<img src="./images/icon-cart-white.svg" className={styles.cart_icon} alt="cart icon" />
 							<h3>Add to cart</h3>
 						</button>

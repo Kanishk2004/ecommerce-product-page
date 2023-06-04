@@ -1,0 +1,77 @@
+.card {
+    position: fixed;
+    top: 12%;
+    right: 10%;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+    color: hsl(220, 13%, 13%);
+    box-shadow: 0px 10px 76px -47px hsl(220, 13%, 13%);
+    border-radius: 10px;
+    z-index: 4;
+}
+
+.card h3{
+    margin: 0px auto 5px auto ;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.prod_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.prod_details p{
+    font-size: 13px;
+    margin: 5px auto;
+    color: hsl(219, 9%, 45%);
+}
+
+.prod_details p span {
+    font-weight: bold;
+    margin-left: 10px;
+    color: hsl(220, 13%, 13%);
+}
+
+.prod_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.card button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: hsla(26, 100%, 55%, 0.799);
+}
+
+.delete_icon {
+    cursor: pointer;
+}
+
+.disp_none {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .card {
+        width: 90vw;
+        height: 230px;
+        top: 11%;
+        right: 20px;
+    }
+}

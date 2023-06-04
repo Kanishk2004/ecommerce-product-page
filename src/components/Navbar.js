@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "@/styles/nav.module.css";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
 	const [menuClass, setMenuClass] = useState(styles.disp_none);
 
 	const openMenu = () => {
@@ -44,8 +44,11 @@ const Navbar = () => {
 						<li>Contact</li>
 					</ul>
 				</div>
-				<div className={styles.right}>
-					<Image src={"./images/icon-cart.svg"} className={styles.cart_icon} alt="cart icon" width="22" height="20" />
+				<div className={styles.right} onClick={props.toggleCart}>
+					<div className={styles.pos_rel}>
+						<Image src={"./images/icon-cart.svg"} className={styles.cart_icon} alt="cart icon" width="22" height="20" />
+						{ !props.prodInCart?<span className={styles.quant_badge}>{props.quantity}</span>:'' }
+					</div>
 					<div>
 						<img className={styles.avatar} src={`./images/image-avatar.png`} alt="profile picture" />
 					</div>
